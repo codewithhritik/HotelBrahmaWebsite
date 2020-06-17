@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brahma</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/landing.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"> 
+		<style>
+			body {
+  				background-color: #000;
+				}
+			
+			#landing-header {
+				  z-index: 1;
+				  position: relative;
+				  text-align: center;
+				  padding-top: 40vh;
+				  animation: textAnimation 2s forwards 0s ease;
+				}
+			
+			#landing-header h1 {
+				  text-transform: uppercase;
+				  color: #fff;
+				  letter-spacing: 6px;
+				  font-family: 'Montserrat', sans-serif;
+				}
+			
+			@keyframes textAnimation{
+					0%{
+						transform: rotate(0) translateY(-15%);
+						opacity: 0;
+						}
+					100%{
+						transform: rotate(0) translateY(0);
+						opacity: 1;
+						font-weight: bolder;
+						}
+				}
+			
+			.slideshow { 
+				  position: fixed;
+				  width: 100%;
+				  height: 100%;
+				  top: 0;
+				  left: 0;
+				  z-index: 0;
+				  list-style: none;
+				  margin: 0;
+				  padding: 0;
+				}
+			
+			.slideshow li { 
+				  width: 100%;
+				  height: 100%;
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  background-size: cover;
+				  background-position: 50% 50%;
+				  background-repeat: no-repeat;
+				  opacity: 0;
+				  z-index: 0;
+				  animation: imageAnimation 50s linear infinite; 
+				}
+			
+			.slideshow li:nth-child(1) { 
+				  background-image: url(https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1476&q=80);
+				}
+				.slideshow li:nth-child(2) { 
+				  background-image: url(https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=1524&q=80);
+				  animation-delay: 10s; 
+				}
+				.slideshow li:nth-child(3) { 
+				  background-image: url(https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1350);
+				  animation-delay: 20s; 
+				}
+				.slideshow li:nth-child(4) { 
+				  background-image: url(https://images.unsplash.com/photo-1552590635-27c2c2128abf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+				  animation-delay: 30s; 
+				}
+				.slideshow li:nth-child(5) { 
+				  background-image: url(https://images.pexels.com/photos/877220/pexels-photo-877220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1350);
+				  animation-delay: 40s; 
+				}
+			
+			@keyframes imageAnimation { 
+				  0% { 
+					opacity: 0; 
+					animation-timing-function: ease-in;
+				  }
+				  10% {
+					opacity: 1;
+					animation-timing-function: ease-out;
+				  }
+				  20% {
+					opacity: 1
+				  }
+				  30% {
+					opacity: 0
+				  }
+				}
+			
+			.Brahma{
+				color: green;
+			}
+			
+			.navbar-brand{
+				text-transform: uppercase;
+				letter-spacing: 3px;
+			}
+			
+			.nav-link{
+				letter-spacing: 1px;
+			}
+			
+			img{
+				height: 60px;
+			}
+			
+		</style>
+    </head>
+    <body>
+    
+	<div class="container">
+		<nav class="navbar navbar-expand-md navbar-light fixed-top">
+		  <img href="/" src="https://i.imgur.com/doowbE4.png" alt="">
+		  <!-- <a class="navbar-brand" href="/">Brahma</a> -->
+		  <button class="navbar-toggler" type="button" data-toggle="collapse">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav navbar-right">
+			  <li class="nav-item active">
+				<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/about">About</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/gallery">Gallery</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/contact">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+	</div>
+		
+    <div id="landing-header">
+		<h1>Welcome to <span class="Brahma">Hotel Brahma Pure Veg!</span></h1>
+		<!-- <a href="/gallery" class="btn btn-lg btn-success">View Gallery</a> -->
+    </div>
+    
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+<%- include("./partials/footer") %>
